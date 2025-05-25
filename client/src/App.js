@@ -66,8 +66,6 @@ const romanticTheme = createTheme({
   },
 });
 
-const API_URL = 'process.env.REACT_APP_API_URL' || 'http://localhost:5000';
-
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     title: '',
@@ -92,7 +90,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`${API_URL}/api/submit-form`, formData);
+      await axios.post('/api/submit-form', formData);
       navigate('/success');
     } catch (error) {
       setSnackbar({

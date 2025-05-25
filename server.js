@@ -10,9 +10,7 @@ const app = express();
 
 // Configure CORS
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' 
-    ? ['https://grievance-corner.vercel.app', 'http://localhost:3000']
-    : 'http://localhost:3000',
+  origin: ['https://grievance-corner.vercel.app', 'http://localhost:3000'],
   credentials: true
 }));
 
