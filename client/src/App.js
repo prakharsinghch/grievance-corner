@@ -66,7 +66,7 @@ const romanticTheme = createTheme({
   },
 });
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API_URL = 'https://grievance-corner.onrender.com' || 'http://localhost:5000';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
