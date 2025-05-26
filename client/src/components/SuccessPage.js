@@ -12,9 +12,9 @@ const SuccessPage = () => {
           elevation={3} 
           sx={{ 
             p: 4,
-            background: 'linear-gradient(135deg, #2d002d 0%, #3d003d 100%)',
-            border: '1px solid rgba(255, 105, 180, 0.1)',
-            boxShadow: '0 0 20px rgba(255, 105, 180, 0.1)',
+            background: 'linear-gradient(135deg, #112240 0%, #233554 100%)',
+            border: '1px solid rgba(33, 150, 243, 0.1)',
+            boxShadow: '0 0 20px rgba(33, 150, 243, 0.1)',
             textAlign: 'center',
           }}
         >
@@ -23,11 +23,11 @@ const SuccessPage = () => {
             component="h1" 
             gutterBottom 
             sx={{
-              background: 'linear-gradient(45deg, #ff69b4 30%, #ff1493 90%)',
+              background: 'linear-gradient(45deg, #2196f3 30%, #00bcd4 90%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               mb: 4,
-              textShadow: '0 0 10px rgba(255, 105, 180, 0.5)',
+              textShadow: '0 0 10px rgba(33, 150, 243, 0.5)',
             }}
           >
             Alright, Nielja 💅
@@ -62,7 +62,7 @@ const SuccessPage = () => {
             onClick={() => navigate('/contact')}
             variant="contained"
             sx={{
-              background: 'linear-gradient(45deg, #ff69b4 30%, #ff1493 90%)',
+              background: 'linear-gradient(45deg, #2196f3 30%, #00bcd4 90%)',
               color: 'white',
               py: 1.5,
               px: 4,
@@ -70,8 +70,8 @@ const SuccessPage = () => {
               textTransform: 'uppercase',
               letterSpacing: '0.1em',
               '&:hover': {
-                background: 'linear-gradient(45deg, #ff1493 30%, #ff69b4 90%)',
-                boxShadow: '0 0 20px rgba(255, 105, 180, 0.4)',
+                background: 'linear-gradient(45deg, #00bcd4 30%, #2196f3 90%)',
+                boxShadow: '0 0 20px rgba(33, 150, 243, 0.4)',
               },
             }}
           >
@@ -85,8 +85,8 @@ const SuccessPage = () => {
               color: 'rgba(255, 255, 255, 0.7)',
               mt: 2,
               '&:hover': {
-                color: '#ff69b4',
-                background: 'rgba(255, 105, 180, 0.1)',
+                color: '#2196f3',
+                background: 'rgba(33, 150, 243, 0.1)',
               },
             }}
           >
@@ -98,4 +98,4 @@ const SuccessPage = () => {
   );
 };
 
-export default SuccessPage; 
+export default SuccessPage;

@@ -4,26 +4,26 @@ import { styled } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
 
 const GradientText = styled(Typography)(({ theme }) => ({
-  background: 'linear-gradient(45deg, #ff69b4 30%, #ff1493 90%)',
+  background: 'linear-gradient(45deg, #2196f3 30%, #00bcd4 90%)',
   WebkitBackgroundClip: 'text',
   WebkitTextFillColor: 'transparent',
-  textShadow: '0 0 20px rgba(255, 105, 180, 0.5)',
+  textShadow: '0 0 20px rgba(33, 150, 243, 0.5)',
 }));
 
 const GlowButton = styled(Button)(({ theme }) => ({
-  background: 'linear-gradient(45deg, #ff69b4 30%, #ff1493 90%)',
+  background: 'linear-gradient(45deg, #2196f3 30%, #00bcd4 90%)',
   border: 0,
   borderRadius: 30,
   color: 'white',
   padding: '15px 40px',
   fontSize: '1.2rem',
   textTransform: 'none',
-  boxShadow: '0 0 20px rgba(255, 105, 180, 0.3)',
+  boxShadow: '0 0 20px rgba(33, 150, 243, 0.3)',
   transition: 'all 0.3s ease',
   '&:hover': {
-    boxShadow: '0 0 30px rgba(255, 105, 180, 0.5)',
+    boxShadow: '0 0 30px rgba(33, 150, 243, 0.5)',
     transform: 'translateY(-2px)',
-    background: 'linear-gradient(45deg, #ff1493 30%, #ff69b4 90%)',
+    background: 'linear-gradient(45deg, #00bcd4 30%, #2196f3 90%)',
   },
 }));
 
@@ -34,7 +34,7 @@ const LandingPage = () => {
     <Box
       sx={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #1a001a 0%, #2d002d 100%)',
+        background: 'linear-gradient(135deg, #0a1929 0%, #112240 100%)',
         display: 'flex',
         alignItems: 'center',
         position: 'relative',
@@ -46,7 +46,7 @@ const LandingPage = () => {
           left: 0,
           right: 0,
           bottom: 0,
-          background: 'radial-gradient(circle at 50% 50%, rgba(255, 105, 180, 0.1) 0%, transparent 50%)',
+          background: 'radial-gradient(circle at 50% 50%, rgba(33, 150, 243, 0.1) 0%, transparent 50%)',
           pointerEvents: 'none',
         },
       }}
@@ -79,7 +79,7 @@ const LandingPage = () => {
               maxWidth: '600px',
               mx: 'auto',
               lineHeight: 1.6,
-              textShadow: '0 0 10px rgba(255, 105, 180, 0.3)',
+              textShadow: '0 0 10px rgba(33, 150, 243, 0.3)',
             }}
           >
             Welcome to the Official Complaint Corner
@@ -92,7 +92,7 @@ const LandingPage = () => {
               maxWidth: '600px',
               mx: 'auto',
               lineHeight: 1.6,
-              textShadow: '0 0 10px rgba(255, 105, 180, 0.3)',
+              textShadow: '0 0 10px rgba(33, 150, 243, 0.3)',
             }}
           >
             Feel free to drop your exaggerated, barely-valid issues here. I’ll read them all with a lovingly judgmental smile.
@@ -124,7 +124,7 @@ const LandingPage = () => {
               transform: 'translate(-50%, -50%)',
               width: '100%',
               height: '100%',
-              background: 'radial-gradient(circle at center, rgba(255, 105, 180, 0.1) 0%, transparent 70%)',
+              background: 'radial-gradient(circle at center, rgba(33, 150, 243, 0.1) 0%, transparent 70%)',
               pointerEvents: 'none',
               zIndex: 0,
             }}

@@ -21,19 +21,19 @@ import axios from 'axios';
 import LandingPage from './components/LandingPage';
 import SuccessPage from './components/SuccessPage';
 
-// Create a romantic cyberpunk theme
-const romanticTheme = createTheme({
+// Create a blueish cyberpunk theme
+const blueTheme = createTheme({
   palette: {
     mode: 'dark',
     primary: {
-      main: '#ff69b4',
+      main: '#2196f3', // blue
     },
     secondary: {
-      main: '#ff1493',
+      main: '#00bcd4', // cyan
     },
     background: {
-      default: '#1a001a',
-      paper: '#2d002d',
+      default: '#0a1929', // deep blue
+      paper: '#112240', // lighter blue
     },
   },
   typography: {
@@ -45,20 +45,20 @@ const romanticTheme = createTheme({
         root: {
           '& .MuiOutlinedInput-root': {
             '& fieldset': {
-              borderColor: 'rgba(255, 105, 180, 0.23)',
+              borderColor: 'rgba(33, 150, 243, 0.23)',
             },
             '&:hover fieldset': {
-              borderColor: '#ff69b4',
+              borderColor: '#2196f3',
             },
             '&.Mui-focused fieldset': {
-              borderColor: '#ff69b4',
+              borderColor: '#2196f3',
             },
           },
           '& .MuiInputLabel-root': {
-            color: 'rgba(255, 105, 180, 0.7)',
+            color: 'rgba(33, 150, 243, 0.7)',
           },
           '& .MuiInputLabel-root.Mui-focused': {
-            color: '#ff69b4',
+            color: '#2196f3',
           },
         },
       },
@@ -112,9 +112,9 @@ const ContactForm = () => {
           elevation={3} 
           sx={{ 
             p: 4,
-            background: 'linear-gradient(135deg, #2d002d 0%, #3d003d 100%)',
-            border: '1px solid rgba(255, 105, 180, 0.1)',
-            boxShadow: '0 0 20px rgba(255, 105, 180, 0.1)',
+            background: 'linear-gradient(135deg, #112240 0%, #233554 100%)',
+            border: '1px solid rgba(33, 150, 243, 0.1)',
+            boxShadow: '0 0 20px rgba(33, 150, 243, 0.1)',
           }}
         >
           <Typography 
@@ -123,11 +123,11 @@ const ContactForm = () => {
             gutterBottom 
             align="center"
             sx={{
-              background: 'linear-gradient(45deg, #ff69b4 30%, #ff1493 90%)',
+              background: 'linear-gradient(45deg, #2196f3 30%, #00bcd4 90%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               mb: 4,
-              textShadow: '0 0 10px rgba(255, 105, 180, 0.5)',
+              textShadow: '0 0 10px rgba(33, 150, 243, 0.5)',
             }}
           >
             COMPLAINT PORTAL
@@ -158,7 +158,7 @@ const ContactForm = () => {
               sx={{ mb: 2 }}
             />
             <FormControl fullWidth sx={{ mb: 2 }}>
-              <InputLabel sx={{ color: 'rgba(255, 105, 180, 0.7)' }}>MOOD</InputLabel>
+              <InputLabel sx={{ color: 'rgba(33, 150, 243, 0.7)' }}>MOOD</InputLabel>
               <Select
                 name="mood"
                 value={formData.mood}
@@ -167,13 +167,13 @@ const ContactForm = () => {
                 sx={{
                   color: 'white',
                   '& .MuiOutlinedInput-notchedOutline': {
-                    borderColor: 'rgba(255, 105, 180, 0.23)',
+                    borderColor: 'rgba(33, 150, 243, 0.23)',
                   },
                   '&:hover .MuiOutlinedInput-notchedOutline': {
-                    borderColor: '#ff69b4',
+                    borderColor: '#2196f3',
                   },
                   '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                    borderColor: '#ff69b4',
+                    borderColor: '#2196f3',
                   },
                 }}
               >
@@ -202,15 +202,15 @@ const ContactForm = () => {
               variant="contained"
               fullWidth
               sx={{
-                background: 'linear-gradient(45deg, #ff69b4 30%, #ff1493 90%)',
+                background: 'linear-gradient(45deg, #2196f3 30%, #00bcd4 90%)',
                 color: 'white',
                 py: 1.5,
                 fontSize: '1.1rem',
                 textTransform: 'uppercase',
                 letterSpacing: '0.1em',
                 '&:hover': {
-                  background: 'linear-gradient(45deg, #ff1493 30%, #ff69b4 90%)',
-                  boxShadow: '0 0 20px rgba(255, 105, 180, 0.4)',
+                  background: 'linear-gradient(45deg, #00bcd4 30%, #2196f3 90%)',
+                  boxShadow: '0 0 20px rgba(33, 150, 243, 0.4)',
                 },
               }}
             >
@@ -229,10 +229,10 @@ const ContactForm = () => {
           severity={snackbar.severity}
           sx={{ 
             width: '100%',
-            background: 'linear-gradient(45deg, #2d002d 30%, #3d003d 90%)',
-            color: '#ff69b4',
+            background: 'linear-gradient(45deg, #112240 30%, #233554 90%)',
+            color: '#2196f3',
             '& .MuiAlert-icon': {
-              color: '#ff69b4',
+              color: '#2196f3',
             },
           }}
         >
@@ -245,7 +245,7 @@ const ContactForm = () => {
 
 function App() {
   return (
-    <ThemeProvider theme={romanticTheme}>
+    <ThemeProvider theme={blueTheme}>
       <CssBaseline />
       <Router>
         <Routes>
@@ -258,4 +258,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;
